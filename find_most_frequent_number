@@ -19,3 +19,5 @@ if nums:
 +    else:
 +        print(f"Unique mode: {modes[0]} (x{max_freq})")
 
+-        n = float(input("Num: "))
++        n = round(float(input("Num: ")), 2)  # Limit to 2 decimal places
