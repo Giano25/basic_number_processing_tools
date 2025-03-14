@@ -1,0 +1,21 @@
+nums = []
+while True:
+    try:
+        nums.append(float(input("Num: ")))
+    except:
+        break
+
+nums.sort(reverse=True)
+print("Sorted descending:", nums)
+
+-nums.sort(reverse=True)
++# Manual bubble sort
++for i in range(len(nums)):
++    for j in range(len(nums)-1):
++        if nums[j] < nums[j+1]:
++            nums[j], nums[j+1] = nums[j+1], nums[j]
+
+-        nums.append(float(input("Num: ")))
++        n = float(input("Num (skip with Enter): "))
++        if n != "":
++            nums.append(float(n))
