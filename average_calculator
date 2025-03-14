@@ -1,0 +1,32 @@
+python
+
+total = 0
+count = 0
+while True:
+    try:
+        num = float(input("Add number: "))
+        total += num
+        count += 1
+    except:
+        break
+
+if count > 0:
+    print("Average:", total/count)
+
+-    print("Average:", total/count)
++    print(f"""
++    Total numbers: {count}
++    Sum: {total}
++    Average: {total/count:.2f}
++    """)
+
++weights = []
+ while True:
+     try:
+         num = float(input("Add number: "))
++        weight = float(input("Weight for this num: "))
+         total += num
++        total += num * weight
+         count += 1
+     except:
+          break
