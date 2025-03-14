@@ -20,3 +20,6 @@ while True:
 -        print("Highest entered:", max_num)
 +        print(f"Final maximum from {count} inputs:", max_num)
          break
+
+-        n = float(input("Enter number: "))
++        n = int(input("Enter whole number: "))
