@@ -7,3 +7,16 @@ while True:
     except:
         print("Highest entered:", max_num)
         break
+
++count = 0
+ while True:
+     try:
+         n = float(input("Enter number: "))
++        count += 1
+         if max_num is None or n > max_num:
+             max_num = n
++        print(f"Current max: {max_num} (after {count} inputs)")
+     except:
+-        print("Highest entered:", max_num)
++        print(f"Final maximum from {count} inputs:", max_num)
+         break
