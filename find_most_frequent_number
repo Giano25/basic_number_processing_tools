@@ -11,3 +11,11 @@ while True:
 if nums:
     max_freq = max(freq.values())
     print("Most frequent:", [k for k,v in freq.items() if v == max_freq][0])
+
+-    print("Most frequent:", [k for k,v in freq.items() if v == max_freq][0])
++    modes = [k for k,v in freq.items() if v == max_freq]
++    if len(modes) > 1:
++        print(f"Multiple modes ({', '.join(map(str, modes))}) with {max_freq} repeats")
++    else:
++        print(f"Unique mode: {modes[0]} (x{max_freq})")
+
