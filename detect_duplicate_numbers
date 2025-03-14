@@ -1,0 +1,12 @@
+nums = []
+for i in range(10):
+    n = float(input("Enter num: "))
+    nums.append(n)
+
+dupes = []
+for x in nums:
+    if nums.count(x) > 1 and x not in dupes:
+        dupes.append(x)
+
+print("Duplicates:", dupes)
+Commit: "Prog01 initial duplicate detection"
