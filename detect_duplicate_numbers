@@ -1,11 +1,20 @@
-nums = []
-for i in range(10):
-    n = float(input("Enter num: "))
-    nums.append(n)
++print("=== Enter 10 Numbers ===")
+ nums = []
+ for i in range(10):
+-    n = float(input("Enter num: "))
++    n = float(input(f"Number {i+1}/10: "))
+     nums.append(n)
 
-dupes = []
-for x in nums:
-    if nums.count(x) > 1 and x not in dupes:
-        dupes.append(x)
++print("\nChecking duplicates...")
+ dupes = []
+ for x in nums:
+     if nums.count(x) > 1 and x not in dupes:
+         dupes.append(x)
 
-print("Duplicates:", dupes)
+-print("Duplicates:", dupes)
++print("Repeated numbers:", ', '.join(map(str, dupes)) if dupes else "No duplicates found")
+Commit: "Prog01 improved input prompts and output formatting"
+
+-    n = float(input(f"Number {i+1}/10: "))
++    n = int(input(f"Number {i+1}/10 (integers only): "))
+Commit: "Prog01 switched to integer inputs"
