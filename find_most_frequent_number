@@ -1,0 +1,13 @@
+freq = {}
+nums = []
+while True:
+    try:
+        n = float(input("Num: "))
+        nums.append(n)
+        freq[n] = freq.get(n, 0) + 1
+    except:
+        break
+
+if nums:
+    max_freq = max(freq.values())
+    print("Most frequent:", [k for k,v in freq.items() if v == max_freq][0])
