@@ -9,4 +9,3 @@ for x in nums:
         dupes.append(x)
 
 print("Duplicates:", dupes)
-Commit: "Prog01 initial duplicate detection"
