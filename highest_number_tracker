@@ -1,0 +1,9 @@
+max_num = None
+while True:
+    try:
+        n = float(input("Enter number: "))
+        if max_num is None or n > max_num:
+            max_num = n
+    except:
+        print("Highest entered:", max_num)
+        break
